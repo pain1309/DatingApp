@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from '@auth0/angular-jwt';
-import { BsDropdownModule, BsDatepickerModule } from 'ngx-bootstrap';
+import { BsDropdownModule, BsDatepickerModule, PaginationModule, ButtonsModule } from 'ngx-bootstrap';
 import { TabsModule } from 'ngx-bootstrap';
 import { FileUploadModule } from 'ng2-file-upload';
 import { AppRoutingModule } from './app-routing.module';
@@ -69,6 +69,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    PaginationModule.forRoot(),
+    ButtonsModule.forRoot(),
     ReactiveFormsModule,
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
