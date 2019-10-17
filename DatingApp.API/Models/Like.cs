@@ -4,7 +4,7 @@ namespace DatingApp.API.Models
     {
         public int LikerId { get; set; } // id user like
         public int LikeeId { get; set; } // id user being liked by another user
-        public User Liker { get; set; }
-        public User Likee { get; set; }
+        public virtual User Liker { get; set; }
+        public virtual User Likee { get; set; }
     }
 }
